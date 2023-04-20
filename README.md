@@ -237,7 +237,7 @@ found [here](https://arduinojson.org/v6/doc/installation/)
 
 Following is the code snippet to produce the json string shown in the previous snippets :
 
-```
+```C++
 #include <ArduinJson.h>
 #include <string.h>
 
@@ -245,12 +245,14 @@ Following is the code snippet to produce the json string shown in the previous s
 // in calculating required the size for the json object. 
 // https://arduinojson.org/v6/assistant/#/step1
 
-#define TX_DOC_MAX_DATA_LEN 192 
-....
+#define TX_DOC_MAX_DATA_LEN 192
+#define BLUETOOTH_SERIAL Serial
+
+...
 
 void readSensors() {
   
-  ....
+  ...
    
   uint8_t s1 = digitalRead(S1);
   uint8_t s2 = digitalRead(S2);
@@ -268,11 +270,11 @@ void readSensors() {
   serializeJson(txDoc, output);   // convert the json object to json string.
   BLUETOOTH_SERIAL.println(output);   // print this serialized data to Serial (Bluetooth) make sure to use the 'println()' function here
   
-  ....
+  ...
   
 }
 
-....
+...
 
 ```
 
@@ -290,7 +292,7 @@ To be documented soon.
 Sending sensor data for 12 channel line sensor array is pretty much similar as for 8 channels,
 However with a minor difference as shown in the snippet below :
 
-```
+```C++
 #include <ArduinJson.h>
 #include <string.h>
 
@@ -299,11 +301,13 @@ However with a minor difference as shown in the snippet below :
 // https://arduinojson.org/v6/assistant/#/step1
 
 #define TX_DOC_MAX_DATA_LEN 192 
-....
+#define BLUETOOTH_SERIAL Serial
+
+...
 
 void readSensors() {
   
-  ....
+  ...
   
   uint8_t s1 = digitalRead(S1);
   uint8_t s2 = digitalRead(S2);
@@ -325,11 +329,11 @@ void readSensors() {
   serializeJson(txDoc, output);   // convert the json object to json string.
   BLUETOOTH_SERIAL.println(output);   // print this serialized data to Serial (Bluetooth) make sure to use the 'println()' function here
   
-  ....
+  ...
   
 }
 
-....
+...
 
 ```
 
