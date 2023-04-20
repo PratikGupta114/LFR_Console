@@ -468,10 +468,11 @@ and we invite you to be part of this exciting journey.
 
 <br/>
 
-
 <div align="center">
-	<img src="./join_group_meme.png" />
+    <img height="300" width="600" src="./join_group_meme.png" />
 </div>
+
+<br/>
 
 <div align="center">  
     <a href="https://t.me/hyperdrivehd">
