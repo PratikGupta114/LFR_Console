@@ -469,26 +469,14 @@ and we invite you to be part of this exciting journey.
 <br/>
 
 <div align="center">  
-  <a 
-    href="https://t.me/hyperdrivehd" style="
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    background: #2AABEE;
-    font-size: 18px;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: Helvetica, sans-serif;">
+  <a href="https://t.me/hyperdrivehd" style=">
         <img 
-            src="./telegram_icon.png"
+            src="./join_hyperdrive_img_link.png"
             style="
             margin-right: 0.6rem;
             height:34px;
             width:34px;"
         />
-        Click here to join HyperDrive Telegram Group
     </a>
 </div>
 
