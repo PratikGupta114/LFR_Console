@@ -482,32 +482,8 @@ and we invite you to be part of this exciting journey.
 
 ### Author
 
-<div style="
-    display: flex; 
-    flex-direction: row;
-    align-items:center;">
-    <img src="./circle_cropped_pp.png" width="120" height="120"/>
-    <div style="margin-left: 1.2rem;">
-        <p style="
-                font-size: 1.5rem;
-                margin: 0 0;">
-            Pratik Gupta
-        </p>
-        <p style="
-                font-size: 0.9rem;
-                margin: 0 0;
-                margin-top: 0.3rem;
-                font-family: Helvetica, sans-serif;">
-            rgrgupta1148@gmail.com
-        </p>
-        <p style="
-                margin: 0 0;
-                margin-top: 0.3rem;
-                font-size: 0.9rem;
-                font-family: Helvetica, sans-serif;">
-            I Build mobile and web apps for a living and robots for fun !
-        </p>
-    </div>
+<div align="center">
+    <img height="200" width="575" src="./about_author.png" />
 </div>
 
 <br/>
