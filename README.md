@@ -468,15 +468,10 @@ and we invite you to be part of this exciting journey.
 
 <br/>
 
+
 <div align="center">  
-  <a href="https://t.me/hyperdrivehd" style=">
-        <img 
-            src="./join_hyperdrive_img_link.png"
-            style="
-            margin-right: 0.6rem;
-            height:34px;
-            width:34px;"
-        />
+    <a href="https://t.me/hyperdrivehd">
+        <img height="100" width="828" src="./join_hyperdrive_link_img.png" />
     </a>
 </div>
 
