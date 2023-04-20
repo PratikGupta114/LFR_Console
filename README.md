@@ -1,8 +1,8 @@
 <p align="center">
-<img height="300" width="480" src="/home/pratik/Downloads/LFR_Console_appIcon.png" title="LFR Console App Logo"/>
+<img height="300" width="480" src="./LFR_Console_appIcon.png" title="LFR Console App Logo"/>
 </p>
 <p align="center">
-<img height="40" width="300" src="/home/pratik/Downloads/hyperdrive_logo_white.png" />
+<img height="40" width="300" src="./hyperdrive_logo_white.png" />
 </p>
 <p align="center">
 <img src="https://img.shields.io/badge/Lastest-1.1.0-brightgreen"/>
@@ -352,7 +352,7 @@ The LFR console android app has 5 slider widgets for :
 - loop delay (derivative delay)
 
 <p align="center">
-    <img src="/home/pratik/Downloads/controls_page_snap.png" width="300"/>
+    <img src="./controls_page_snap.png" width="300"/>
 </p>
 
 Data is sent only when the user stops sliding and releases contact from it. Data is sent for all the
@@ -494,7 +494,7 @@ and we invite you to be part of this exciting journey.
     display: flex; 
     flex-direction: row;
     align-items:center;">
-    <img src="/home/pratik/Downloads/circle_cropped_pp.png" width="120" height="120"/>
+    <img src="./circle_cropped_pp.png" width="120" height="120"/>
     <div style="margin-left: 1.2rem;">
         <p style="
                 font-size: 1.5rem;
