@@ -351,7 +351,59 @@ To be documented soon.
 
 ### Send Serial Plotter data for up to 3 variables
 
-To be documented soon.
+Following is the code in the arduino that creates a json object for 3 variables and their corresponing labels. The object is then serialized
+to a json string and sent over the bluetooth, the app then presents these values on a Serial plotter.
+
+```C++
+#include "math.h"
+#include "string.h"
+#include "ArduinoJson.h"
+
+StaticJsonDocument<96> doc;
+
+#define LED_PIN 11
+#define BLUETOOTH_SERIAL Serial
+
+int i = 0;
+float sin_val = 0.0f;
+float cos_val = 0.0f;
+float cosine_val = 0.0f;
+
+char buffer[96];
+
+// rounds floats up to 2 decimal places 
+double round2(double value) {
+   return (int)(value * 100 + 0.5) / 100.0;
+}
+
+void setup() {
+  // put your setup code here, to run once:
+  BLUETOOTH_SERIAL.begin(115200);
+}
+
+void loop() {
+  sin_val = 10 * sin(i * DEG_TO_RAD);
+  cos_val = 10 * cos(i * DEG_TO_RAD);
+  cosine_val = random(-10, 10);
+
+  doc["l1"] = "sine";
+  doc["l2"] = "cos";
+  doc["l3"] = "cosine";
+  doc["v1"] = round2(sin_val);
+  doc["v2"] = round2(cos_val);
+  doc["v3"] = round2(cosine_val);
+
+  serializeJson(doc, buffer);
+  BLUETOOTH_SERIAL.println(buffer);
+
+  if (i > 360)
+    i = 0;
+  else 
+    i++;
+
+  delay(10);
+}
+```
 
 ### Receive PID tuning params from the app in the microcontroller.
 
