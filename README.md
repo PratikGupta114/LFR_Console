@@ -72,7 +72,7 @@ the HC-05 parse the AT commands effectively.
   back on the Serial monitor as follows :
 
 <p align="center">
-    <img height="150" src="/home/pratik/AT_CONFGI_SNAP.png"/>
+    <img height="150" src="./AT_CONFGI_SNAP.png"/>
 </p>
 This shall mean that everything is working fine.
 A List of AT commands for configuring an HC-05 can be availed [here](https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/709/HC-05_ATCommandSet.pdf)
