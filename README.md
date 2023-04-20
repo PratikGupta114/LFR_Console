@@ -1,11 +1,19 @@
 <p align="center">
-<img height="300" width="480" src="./LFR_Console_appIcon.png" title="LFR Console App Logo"/>
+    <a href="./LFR_Console[v1.1.0-(18-04-2023)].apk">
+        <img height="300" width="520" src="./LFR_Console_appIcon.png" title="LFR Console App Logo"/>
+    </a>
 </p>
+
 <p align="center">
-<img height="40" width="300" src="./hyperdrive_logo_white.png" />
+    <a href="#features-include">
+        <img height="40" width="300" src="./hyperdrive_logo_white.png" />
+    </a>
 </p>
+
 <p align="center">
-<img src="https://img.shields.io/badge/Lastest-1.1.0-brightgreen"/>
+    <a href="./LFR_Console[v1.1.0-(18-04-2023)].apk">
+        <img src="https://img.shields.io/badge/Lastest-1.1.0-brightgreen"/>
+    </a>
 </p>
 
 ## LFR Console 🤖
