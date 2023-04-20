@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <a href="#features-include">
+    <a href="##about-hyper-drive-community">
         <img height="40" width="300" src="./hyperdrive_logo_white.png" />
     </a>
 </p>
