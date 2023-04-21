@@ -256,6 +256,8 @@ Following is the code snippet to produce the json string shown in the previous s
 #define TX_DOC_MAX_DATA_LEN 192
 #define BLUETOOTH_SERIAL Serial
 
+StaticJsonDocument<TX_DOC_MAX_DATA_LEN> txDoc;
+
 ...
 
 void readSensors() {
@@ -310,6 +312,8 @@ However with a minor difference as shown in the snippet below :
 
 #define TX_DOC_MAX_DATA_LEN 192 
 #define BLUETOOTH_SERIAL Serial
+
+StaticJsonDocument<TX_DOC_MAX_DATA_LEN> txDoc;
 
 ...
 
@@ -456,6 +460,8 @@ the following code snippet can be used to parse the incoming json string and ext
 #define DEFAULT_KI 0
 #define DEFAULT_KD 40
 #define DEFAULT_MOTOR_SPEED 80
+
+StaticJsonDocument<RX_DOC_MAX_DATA_LEN> rxDoc;
 
 int Kp = DEFAULT_KP;
 int Ki = DEFAULT_KI;
