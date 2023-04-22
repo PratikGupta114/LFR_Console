@@ -12,7 +12,7 @@
 
 <p align="center">
     <a href="./LFR_Console[v1.1.0-(18-04-2023)].apk">
-        <img src="https://img.shields.io/badge/Lastest-1.1.0-brightgreen"/>
+        <img src="https://img.shields.io/badge/Lastest-1.1.1-brightgreen"/>
     </a>
 </p>
 
