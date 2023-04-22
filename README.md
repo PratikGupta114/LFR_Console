@@ -256,14 +256,14 @@ Following is the code snippet to produce the json string shown in the previous s
 #define TX_DOC_MAX_DATA_LEN 192
 #define BLUETOOTH_SERIAL Serial
 
-StaticJsonDocument<TX_DOC_MAX_DATA_LEN> txDoc;
-
-...
+// rest of the code ...
 
 void readSensors() {
   
-  ...
-   
+  // rest of the code ...
+  
+  StaticJsonDocument<TX_DOC_MAX_DATA_LEN> txDoc;
+  
   uint8_t s1 = digitalRead(S1);
   uint8_t s2 = digitalRead(S2);
   uint8_t s3 = digitalRead(S3);
@@ -280,11 +280,11 @@ void readSensors() {
   serializeJson(txDoc, output);   // convert the json object to json string.
   BLUETOOTH_SERIAL.println(output);   // print this serialized data to Serial (Bluetooth) make sure to use the 'println()' function here
   
-  ...
+  // rest of the code ...
   
 }
 
-...
+// rest of the code ...
 
 ```
 
@@ -313,13 +313,13 @@ However with a minor difference as shown in the snippet below :
 #define TX_DOC_MAX_DATA_LEN 192 
 #define BLUETOOTH_SERIAL Serial
 
-StaticJsonDocument<TX_DOC_MAX_DATA_LEN> txDoc;
-
-...
+// rest of the code ...
 
 void readSensors() {
   
-  ...
+  // rest of the code ...
+  
+  StaticJsonDocument<TX_DOC_MAX_DATA_LEN> txDoc;
   
   uint8_t s1 = digitalRead(S1);
   uint8_t s2 = digitalRead(S2);
@@ -341,11 +341,11 @@ void readSensors() {
   serializeJson(txDoc, output);   // convert the json object to json string.
   BLUETOOTH_SERIAL.println(output);   // print this serialized data to Serial (Bluetooth) make sure to use the 'println()' function here
   
-  ...
+  // rest of the code ...
   
 }
 
-...
+// rest of the code ...
 
 ```
 
@@ -363,7 +363,6 @@ to a json string and sent over the bluetooth, the app then presents these values
 #include "string.h"
 #include "ArduinoJson.h"
 
-StaticJsonDocument<96> doc;
 
 #define LED_PIN 11
 #define BLUETOOTH_SERIAL Serial
@@ -386,6 +385,9 @@ void setup() {
 }
 
 void loop() {
+
+  StaticJsonDocument<96> doc;
+
   sin_val = 10 * sin(i * DEG_TO_RAD);
   cos_val = 10 * cos(i * DEG_TO_RAD);
   cosine_val = random(-10, 10);
@@ -461,24 +463,26 @@ the following code snippet can be used to parse the incoming json string and ext
 #define DEFAULT_KD 40
 #define DEFAULT_MOTOR_SPEED 80
 
-StaticJsonDocument<RX_DOC_MAX_DATA_LEN> rxDoc;
-
 int Kp = DEFAULT_KP;
 int Ki = DEFAULT_KI;
 int Kd = DEFAULT_KD;
 int baseMotorSpeed = DEFAULT_MOTOR_SPEED;
 int loopDelay = DEFAULT_LOOP_DELAY;
 
-...
+// rest of the code ...
 
 void setup() {
-    ...
+    // rest of the code ...
     BLUETOOTH_SERIAL.begin(115200); // important to set this baud rate
-    ...
+    // rest of the code ...
 }
 
 void loop () {
-    ...
+
+    StaticJsonDocument<RX_DOC_MAX_DATA_LEN> rxDoc;
+    
+    // rest of the code ...
+    
     if (BLUETOOTH_SERIAL.available()) 
     {
 		BLUETOOTH_SERIAL.flush();
@@ -498,10 +502,10 @@ void loop () {
 		loopDelay = rxDoc["de"];	  // 100
 		rxDoc.clear();
 	}
-	...
+	// rest of the code ...
 }
 
-...
+// rest of the code ...
 
 ```
 
