@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="./LFR_Console[v1.1.1-(21-04-2023)].apk">
+    <a href="./LFR_Console[v1.2.0-(17-05-2023)].apk">
         <img height="300" width="520" src="./LFR_Console_appIcon.png" title="LFR Console App Logo"/>
     </a>
 </p>
@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-    <a href="./LFR_Console[v1.1.1-(21-04-2023)].apk">
-        <img src="https://img.shields.io/badge/Lastest-1.1.1-brightgreen"/>
+    <a href="./LFR_Console[v1.2.0-(17-05-2023)].apk">
+        <img src="https://img.shields.io/badge/Lastest-1.2.0-brightgreen"/>
     </a>
 </p>
 
