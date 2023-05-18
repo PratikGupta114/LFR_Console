@@ -26,7 +26,7 @@ bluetooth with the LFR connected to an HC-05 module.
 ### Features Include
 
 - ⚡ Low latency, small range wireless connectivity over Bluetooth.
-- 📃️ Wireless logging with 4 verbosity levels
+- 📃️ Wireless logging with 4 verbosity levels with verbosity level filter
 - ⏯️ Play or Pause Logging to enable precise debugging
 - 🎛️ Realtime publish of new PID tuning parameters using user friendly app widgets (seekbar)
 - 1️⃣0️⃣ Digital Line Sensor data visualization (8 & 12 channel)
