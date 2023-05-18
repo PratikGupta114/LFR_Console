@@ -93,6 +93,8 @@ A List of AT commands for configuring an HC-05 can be availed [here](https://s3-
       module.
     - ``AT+PSWD=<4-DIGIT_NUMERIC_PIN>`` (**optional**) to override the default pin **1234**.
 
+>NOTE : Make sure to remove the wires connected to the KEY pin of HC-05 and restart. This will make the HC05 get back to pairing mode.
+
 ### Send log messages from the MCU
 
 Now that the HC-05 is configured, connecting it to the app is no rocket science. Simply scan and
